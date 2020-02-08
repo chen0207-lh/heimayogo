@@ -1,0 +1,11 @@
+<!--components/GoodList/GoodList.wxml-->
+<view class="goods_list">
+  <block wx:for='{{goods_list}}' wx:key='*this'>
+    <navigator  url="/pages/goods_detail/index?goods_id={{item.goods_id}}" open-type="navigate">
+      <view class="goods_list_image">
+      <image src="https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg" mode="widthFix"></image>
+      </view>
+      <view class="goods_list_name">{{item.goods_name}}</view>
+    </navigator>
+  </block>
+</view>

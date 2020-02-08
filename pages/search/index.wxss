@@ -1,1 +1,23 @@
-/* pages/search/index.wxss */
+.hmyg_search {
+  display: flex;
+}
+.hmyg_search .search_input {
+  display: flex;
+  width: 599rpx;
+  height: 61rpx;
+  border-radius: 27rpx;
+  background: #E7E7E7;
+  color: #6C6C6C;
+  margin: 15rpx 15rpx 15rpx 18rpx;
+}
+.hmyg_search .search_btn {
+  width: 101rpx;
+  height: 61rpx;
+  font-size: 25rpx;
+  line-height: 61rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  color: #fff;
+  background: #EA4350;
+  margin: 15rpx 15rpx 15rpx 0rpx;
+}
