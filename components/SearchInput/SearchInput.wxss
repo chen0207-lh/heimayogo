@@ -1,0 +1,17 @@
+.SearchInput {
+  width: 750rpx;
+  height: 90rpx;
+  background: #EA4350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SearchInput navigator {
+  width: 700rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  background: #fff;
+}

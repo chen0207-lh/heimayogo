@@ -1,0 +1,82 @@
+// 轮播图部分
+
+.hmyg_swiper {
+    swiper {
+        height: 340rpx;
+
+        swiper-item {
+            navigator {
+                image {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 菜单导航部分
+
+.hmyg_menu {
+    display: flex;
+
+    navigator {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        image {
+            height: 140rpx;
+            width: 128rpx;
+        }
+    }
+}
+
+// 楼层部分
+
+.hmyg_floor {
+    margin-top: 43rpx;
+
+    .floor_title {
+        navigator {
+            image {
+                height: 59rpx;
+                width: 100%;
+            }
+        }
+    }
+
+    .floor_content {
+        display: flex;
+
+        .floor_content_left {
+            navigator {
+                image {
+                    width: 232rpx;
+                    height: 386rpx;
+                    margin-left:16rpx;
+                }
+            }
+        }
+
+        .floor_content_right {
+            display: flex;
+            flex-wrap: wrap;
+
+            navigator {
+                image:nth-child(1) {
+                    width: 233rpx;
+                }
+                image:nth-child(3) {
+                    width: 233rpx;
+                }
+                image {
+                    flex: 1;
+                    height: 188rpx;
+                    width: 223rpx;
+                    margin-left:15rpx;
+                }
+            }
+        }
+    }
+}

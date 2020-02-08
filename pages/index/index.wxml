@@ -1,1 +1,59 @@
-index
+<view class="hmyg_index">
+  <!-- 搜索框开始 -->
+  <SearchInput></SearchInput>
+  <!-- 搜索框结束 -->
+  <!-- 轮播图开始 -->
+  <view class="hmyg_swiper">
+    <!-- indicator-dots:是否显示面板指示点 indicator-color:指示点颜色  autoplay:是否自动切换 -->
+    <swiper indicator-color="true" circular="true" indicator-dots="true">
+      <swiper-item wx:for='{{swiper_list}}' wx:key='goods_id'>
+        <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 路播图结束 -->
+  <!-- 菜单导航部分开始 -->
+  <view class="hmyg_menu">
+    <block wx:for='{{menu_list}}' wx:key='*this'>
+      <navigator url="{{item.navigator_url}}" open-type="open_type">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </block>
+  </view>
+  <!-- 菜单导航部分结束 -->
+  <!-- 楼层开始 -->
+  <view class="hmyg_floor">
+    <block wx:for='{{floor_list}}' wx:key='*this'>
+      <!-- 标题部分开始 -->
+      <view class="floor_title">
+        <navigator>
+          <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </view>
+      <!-- 标题部分结束 -->
+      <!-- 楼层内容部分开始 -->
+      <!-- 第一个长图开始 -->
+      <view class="floor_content">
+        <view class="floor_content_left">
+          <navigator r url="{{item.navigator_url}}" open-type="{{open_type}}">
+            <image src="{{item.product_list[0].image_src}}" mode="widthFix"></image>
+          </navigator>
+        </view>
+        <!-- 第一个长图结束 -->
+        <!-- 后面四张图开始 -->
+        <view class="floor_content_right">
+          <block wx:for='{{item.product_list}}' wx:for-item='v' wx:for-index='i' wx:key='*this'>
+            <navigator wx:if='{{i!== 0}}' url="{{v.navigator_url}}" open-type="{{v.open_type}}">
+              <image src="{{v.image_src}}"></image>
+            </navigator>
+          </block>
+        </view>
+      </view>
+      <!-- 后面四张图结束 -->
+      <!-- 楼层内容部分结束 -->
+    </block>
+  </view>
+  <!-- 楼层结束 -->
+</view>

@@ -1,0 +1,50 @@
+.hmyg_swiper swiper {
+  height: 340rpx;
+}
+.hmyg_swiper swiper swiper-item navigator image {
+  height: 100%;
+}
+.hmyg_menu {
+  display: flex;
+}
+.hmyg_menu navigator {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hmyg_menu navigator image {
+  height: 140rpx;
+  width: 128rpx;
+}
+.hmyg_floor {
+  margin-top: 43rpx;
+}
+.hmyg_floor .floor_title navigator image {
+  height: 59rpx;
+  width: 100%;
+}
+.hmyg_floor .floor_content {
+  display: flex;
+}
+.hmyg_floor .floor_content .floor_content_left navigator image {
+  width: 232rpx;
+  height: 386rpx;
+  margin-left: 16rpx;
+}
+.hmyg_floor .floor_content .floor_content_right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hmyg_floor .floor_content .floor_content_right navigator image:nth-child(1) {
+  width: 233rpx;
+}
+.hmyg_floor .floor_content .floor_content_right navigator image:nth-child(3) {
+  width: 233rpx;
+}
+.hmyg_floor .floor_content .floor_content_right navigator image {
+  flex: 1;
+  height: 188rpx;
+  width: 223rpx;
+  margin-left: 15rpx;
+}
