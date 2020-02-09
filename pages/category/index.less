@@ -1,0 +1,55 @@
+page {
+    height: 100%;
+}
+
+.category_content {
+    display: flex;
+    height: calc(100vh - 100rpx);
+
+    .left_menu {
+        flex: 2;
+        height: 100%;
+        width: 182rpx;
+
+        .menu_item {
+            line-height: 70rpx;
+            text-align: center;
+            color: #585858;
+            font-size: 28rpx;
+        }
+
+        .menu_item:nth-child(1) {
+            margin-top: 5rpx;
+        }
+
+        .active {
+            color: var(--themeColor);
+            border-left: 4rpx solid #EA4350;
+        }
+    }
+
+    .right_content {
+        flex: 5;
+        margin-top: 15rpx;
+
+        .right_content_title {
+            text-align: center;
+        }
+
+        .right_content_item {
+            display: flex;
+            flex-wrap: wrap;
+
+            navigator {
+                width: 33.33%;
+                text-align: center;
+
+                image {
+                    width: 120rpx;
+                    height: 120rpx;
+                }
+            }
+        }
+
+    }
+}

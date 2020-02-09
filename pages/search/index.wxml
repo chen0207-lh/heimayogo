@@ -12,6 +12,6 @@
   <!-- 搜索按钮结束 -->
 </view>
 <!-- 搜索结果开始 -->
-<GoodsList goods_list='{{goods_list}}'/>
+<GoodsList goods_list='{{goods_list}}' />
 <!-- 搜索结果结束 -->
 <!-- 搜索页面结束 -->
