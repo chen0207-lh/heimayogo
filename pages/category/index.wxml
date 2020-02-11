@@ -21,7 +21,7 @@
           /{{" "+item.cat_name+" "}}/
         </view>
         <view class="right_content_item">
-          <navigator url="/pages/goods_list/index?cid='{{v.cat_id}}'" wx:for='{{item.children}}' wx:for-item='v' wx:for-index='i' wx:key='i'>
+          <navigator url="/pages/goods_list/index?cid={{v.cat_id}}" wx:for='{{item.children}}' wx:for-item='v' wx:for-index='i' wx:key='i'>
             <image src="{{v.cat_icon}}" mode="widthFix"></image>
             <view>{{v.cat_name}}</view>
           </navigator>

@@ -20,6 +20,7 @@ Page({
   onLoad: function(options) {
     this.getCategoryList();
   },
+  // 获取分类页面的数据
   getCategoryList: async function(e) {
     const category_list = await request({
       url: '/categories'
@@ -35,7 +36,7 @@ Page({
     // console.log(category_left)
     // console.log(category_right)
   },
-  // 点击
+  // 点击左侧的菜单列表数据切换到对应的数据
   handleItemClick(e) {
     const {
       index

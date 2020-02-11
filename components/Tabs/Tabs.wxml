@@ -1,0 +1,10 @@
+<!--components/Tabs/Tabs.wxml-->
+<!-- Tabs栏开始 -->
+<view class="hmyg_Tabs">
+  <view class="Tabs_item  {{item.isActive?'active':''}}" wx:for='{{Tabs}}' wx:key='index' bindtap="handleTabClick" data-id="{{item.id}}">
+    <view class="Tabs_title">
+      {{item.value}}
+    </view>
+  </view>
+</view>
+<!-- Tabs栏结束 -->

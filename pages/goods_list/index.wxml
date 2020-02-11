@@ -1,2 +1,29 @@
 <!--pages/goods_list/index.wxml-->
-<text>pages/goods_list/index.wxml</text>
+<view class="hmyg_goods_list">
+  <!-- 搜索栏开始 -->
+  <SearchInput/>
+  <!-- 搜索栏结束 -->
+  <!-- tabs栏开始 -->
+  <Tabs Tabs='{{Tabs}}' bind:TabsChange='handlTabsChange' />
+  <!--tabs栏结束 -->
+  <!-- 列表开始 -->
+  <!-- 根据 isActive的ture或false获取到不同的视图内容-->
+  <view wx:if='{{Tabs[0].isActive}}'>
+    <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="goods_content" wx:for='{{goods}}' wx:key='*this'>
+      <!-- 右侧图片开始 -->
+      <view class="goods_image">
+        <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"></image>
+      </view>
+      <!-- 验证图片结束 -->
+      <!-- 左侧文字开始 -->
+      <view class="goods_title">
+        <view class="godds_name">{{item.goods_name}}</view>
+        <view class="goods_price">￥{{item.goods_price}}</view>
+      </view>
+      <!-- 左侧文字结束 -->
+    </navigator>
+  </view>
+  <view wx:if='{{Tabs[1].isActive}}'>2</view>
+  <view wx:if='{{Tabs[2].isActive}}'>3</view>
+  <!-- 列表结束 -->
+</view>

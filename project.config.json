@@ -82,6 +82,14 @@
 					"id": -1,
 					"name": "搜索页面",
 					"pathName": "pages/search/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "商品列表页面",
+					"pathName": "pages/goods_list/index",
+					"query": "",
 					"scene": null
 				}
 			]
