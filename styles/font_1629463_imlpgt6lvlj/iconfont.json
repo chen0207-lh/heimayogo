@@ -1,0 +1,121 @@
+{
+  "id": "1629463",
+  "name": "new_pyg_20200206",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "55156",
+      "name": "加",
+      "font_class": "54",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "88780",
+      "name": "全部订单",
+      "font_class": "quanbudingdan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "101320",
+      "name": "退款",
+      "font_class": "tuikuan",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "554156",
+      "name": "减",
+      "font_class": "iconset0187",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "866496",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1119363",
+      "name": "意见反馈",
+      "font_class": "yijianfankui",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "1271907",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1379949",
+      "name": "待付款",
+      "font_class": "icon-test",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1391480",
+      "name": "联系客服",
+      "font_class": "lianxikefu",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "1687293",
+      "name": "当前版本",
+      "font_class": "ziyuan",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "3315139",
+      "name": "选中",
+      "font_class": "xuanzhong",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "5270853",
+      "name": "待收货-我的",
+      "font_class": "daishouhuo",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "6049781",
+      "name": "收藏2_高亮",
+      "font_class": "shoucang_gaoliang",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "6275382",
+      "name": "圆圈",
+      "font_class": "icon-test1",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "6366908",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "10050450",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    }
+  ]
+}

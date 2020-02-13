@@ -1,0 +1,132 @@
+.goods_swiper {
+    swiper {
+        height: 479rpx;
+
+        .goods_image {
+            text-align: center;
+
+            image {
+                width: 479rpx;
+                height: 479rpx;
+            }
+        }
+    }
+}
+
+.goods_desc {
+    .goods_text {
+        display: flex;
+        position: relative;
+
+        .goods_price {
+            color: var(--themeColor);
+            font-size: 36rpx;
+            margin: 0 445rpx 0 35rpx;
+        }
+
+        .goods_icon {
+            display: flex;
+            align-items: center;
+
+            .icon_share {
+                margin-right: 45rpx;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    top: 0;
+                    right: 0rpx;
+                    opacity: 0;
+                    // background: red;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .icon_collect.iconfont {
+                font-size: 20px;
+            }
+
+            .active {
+                color: var(--themeColor);
+            }
+        }
+    }
+
+    .goods_title {
+        margin: 19rpx 36rpx 86rpx 33rpx;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .image_text view {
+        font-size: 28rpx;
+        text-align: center;
+    }
+}
+
+.goods_toll {
+    position:fixed;
+    bottom:0;
+    left:0;
+    background: #fff;
+    display: flex;
+    height: 94rpx;
+    // align-items: center;
+    padding-left:50rpx;
+
+    .toll_contact {
+        position: relative;
+        text-align: center;
+        color: #434343 ;
+        .iconfont.icon-lianxikefu {
+            font-size: 20px;
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15rpx;
+            height: 73rpx;
+            // background: red;
+            opacity: 0;
+        }
+    }
+
+    navigator {
+        margin: 0 35rpx;
+        text-align: center;
+        color: #434343 ;
+
+        .iconfont.icon-gouwuche {
+            font-size: 20px;
+        }
+
+        .toll_cart {}
+    }
+
+    .join_cart {
+        width: 196rpx;
+        height: 60rpx;
+        text-align: center;
+        line-height: 60rpx;
+        border-radius: 30rpx;
+        margin-top:17rpx;
+        background: #FCAA23;
+        color: #fff;
+    }
+
+    .toll_buy {
+        width: 196rpx;
+        height: 60rpx;
+        text-align: center;
+        line-height: 60rpx;
+        border-radius: 30rpx;
+        margin-top:17rpx;
+        background: #EA4350;
+        color: #fff;
+    }
+}

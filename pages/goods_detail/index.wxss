@@ -1,1 +1,105 @@
-/* pages/goods_detail/index.wxss */
+.goods_swiper swiper {
+  height: 479rpx;
+}
+.goods_swiper swiper .goods_image {
+  text-align: center;
+}
+.goods_swiper swiper .goods_image image {
+  width: 479rpx;
+  height: 479rpx;
+}
+.goods_desc .goods_text {
+  display: flex;
+  position: relative;
+}
+.goods_desc .goods_text .goods_price {
+  color: var(--themeColor);
+  font-size: 36rpx;
+  margin: 0 445rpx 0 35rpx;
+}
+.goods_desc .goods_text .goods_icon {
+  display: flex;
+  align-items: center;
+}
+.goods_desc .goods_text .goods_icon .icon_share {
+  margin-right: 45rpx;
+  position: relative;
+}
+.goods_desc .goods_text .goods_icon .icon_share button {
+  position: absolute;
+  top: 0;
+  right: 0rpx;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.goods_desc .goods_text .goods_icon .icon_collect.iconfont {
+  font-size: 20px;
+}
+.goods_desc .goods_text .goods_icon .active {
+  color: var(--themeColor);
+}
+.goods_desc .goods_title {
+  margin: 19rpx 36rpx 86rpx 33rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods_desc .image_text view {
+  font-size: 28rpx;
+  text-align: center;
+}
+.goods_toll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  display: flex;
+  height: 94rpx;
+  padding-left: 50rpx;
+}
+.goods_toll .toll_contact {
+  position: relative;
+  text-align: center;
+  color: #434343;
+}
+.goods_toll .toll_contact .iconfont.icon-lianxikefu {
+  font-size: 20px;
+}
+.goods_toll .toll_contact button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rpx;
+  height: 73rpx;
+  opacity: 0;
+}
+.goods_toll navigator {
+  margin: 0 35rpx;
+  text-align: center;
+  color: #434343;
+}
+.goods_toll navigator .iconfont.icon-gouwuche {
+  font-size: 20px;
+}
+.goods_toll .join_cart {
+  width: 196rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  margin-top: 17rpx;
+  background: #FCAA23;
+  color: #fff;
+}
+.goods_toll .toll_buy {
+  width: 196rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  margin-top: 17rpx;
+  background: #EA4350;
+  color: #fff;
+}

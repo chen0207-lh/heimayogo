@@ -1,2 +1,68 @@
 <!--pages/goods_detail/index.wxml-->
-<text>pages/goods_detail/index.wxml</text> ''
+<view class="hmyg_goods_detail">
+  <!-- 轮播图开始 -->
+  <view class="goods_swiper">
+    <swiper circular="true" indicator-color="true" indicator-dots="true">
+      <swiper-item wx:for='{{detail_list.pics}}' wx:key='*this'>
+        <view class="goods_image">
+          <!-- 点击预览图片效果：给图片添加点击事件，需要用到wx.perviewImage,用到wx.perviewImage需要两个参数current：当前显示的图片路径 urls：需要预览的图片列表 -->
+          <image src="{{item.pics_mid}}" bindtap="handleImageClick" data-pics='{{detail_list.pics}}' data-current='{{item.pics_mid}}'></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+  <!-- 商品描述开始 -->
+  <view class="goods_desc">
+    <!--文本部分开始  -->
+    <view class="goods_text">
+      <view class="goods_price">￥{{detail_list.goods_price}}</view>
+      <view class="goods_icon">
+        <!-- 分享按钮 -->
+        <view class="icon_share">
+          <view class="iconfont icon-fenxiang"></view>
+          <!-- size:button大小 default:默认大小  open-type:微信开发功能  share:触发用户转发-->
+          <button size="default" open-type="share"></button>
+        </view>
+        <!-- 收藏按钮 -->
+        <view class="icon_collect iconfont {{isCollect?'icon-shoucang_gaoliang active' :'icon-shoucang'}}" bindtap="handleCollect"></view>
+      </view>
+    </view>
+    <!-- 标题开始 -->
+    <view class="goods_title">
+      {{detail_list.goods_name}}
+    </view>
+    <!-- 标题结束 -->
+    <!-- 文本部分结束 -->
+    <!-- 商品图文详情开始 -->
+    <view class="image_text">
+      <view>图文详情</view>
+      <rich-text nodes='{{detail_list.goods_introduce}}'></rich-text>
+    </view>
+    <!-- 商品图文详情介绍 -->
+  </view>
+  <!-- 商品描述结束 -->
+  <!-- 底部工具栏开始 -->
+  <view class="goods_toll">
+    <!-- 联系客服按钮 -->
+    <view class="toll_contact">
+      <view class="iconfont icon-lianxikefu"></view>
+      <view>联系客服</view>
+      <!--contact: 打开客服会话，如果用户在会话中点击消息卡片后返回小程序，可以从 bindcontact 回调中获得具体信息 -->
+      <button  open-type="contact"></button>
+    </view>
+    <!-- 购物车按钮 -->
+    <!-- switchTab:跳转的 tabBar 页面的路径 -->
+    <navigator url="/pages/cart/index" open-type="switchTab">
+      <view class="iconfont icon-gouwuche"></view>
+      <view class="toll_cart">购物车</view>
+    </navigator>
+    <!-- 加入购物车按钮 -->
+    <view class="join_cart" bindtap="handleCartAdd">加入购物车</view>
+    <!-- 立即购买按钮 -->
+    <navigator url="/pages/pay/index">
+      <view class="toll_buy">立即购买</view>
+    </navigator>
+  </view>
+  <!-- 底部工具栏结束 -->
+</view>
