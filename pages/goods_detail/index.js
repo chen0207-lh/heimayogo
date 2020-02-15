@@ -64,7 +64,7 @@ Page({
         mask: true
       })
     } else {
-      // 收藏成功，就把当前请求数据获取到的数据push添加到collect本地缓存中去
+      // 收藏成功，就把当前请求数据获取到的数据push添加到collect本地缓存中去 mun
       collect.push(this.data.detail_list)
       // 标识一下该商品已收藏
       isCollect = true
@@ -92,13 +92,13 @@ Page({
     if (index === -1) {
       let detail_list = this.data.detail_list
       // 第一次添加就是1，再继续添加就追加上去
-      detail_list.mun = 1
+      detail_list.num = 1
       detail_list.checked = true
       // 把添加到购物车中的商品数据添加进carts中
       carts.push(detail_list)
     } else {
       // 如果该商品已经在购物车中了就把数量追加上去
-      cates[index].mun++
+      cates[index].num++
     }
     // 重新把carts数据添加回缓存中
     wx.setStorageSync('carts', carts)

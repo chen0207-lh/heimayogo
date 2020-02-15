@@ -1,1 +1,141 @@
-/* pages/cart/index.wxss */
+.hmyg_carts .carts {
+  width: 689rpx;
+  height: 209rpx;
+  padding: 27rpx 25rpx 0rpx 27rpx;
+}
+.hmyg_carts .carts .carts_list_item {
+  display: flex;
+}
+.hmyg_carts .carts .carts_list_item .iconfont.icon-xuanzhong.icon_xuanzhong {
+  color: var(--themeColor);
+  margin: 72rpx 35rpx 102rpx 25rpx;
+}
+.hmyg_carts .carts .carts_list_item .iconfont.icon-icon-test1 {
+  height: 36rpx;
+  width: 36rpx;
+  border-radius: 50%;
+  margin: 72rpx 35rpx 102rpx 25rpx;
+  border: 1rpx solid #8A8A8A;
+  color: white;
+  float: left;
+}
+.hmyg_carts .carts .carts_list_item .carts_Image image {
+  width: 191rpx;
+  height: 191rpx;
+}
+.hmyg_carts .carts .carts_list_item .carts_text .title {
+  margin: 53rpx 23rpx 56rpx 19rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.hmyg_carts .carts .carts_list_item .carts_text .carts_toll {
+  display: flex;
+  justify-content: space-between;
+}
+.hmyg_carts .carts .carts_list_item .carts_text .carts_toll .carts_price {
+  color: var(--themeColor);
+  font-size: 24rpx;
+}
+.hmyg_carts .carts .carts_list_item .carts_text .carts_toll .carts_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hmyg_carts .carts .carts_list_item .carts_text .carts_toll .carts_number .number_text {
+  margin: 0 22rpx;
+}
+.hmyg_carts .carts .carts_list_item .carts_text .carts_toll .carts_number .iconfont.icon-54 {
+  margin-top: -5rpx;
+}
+.hmyg_carts .carts .carts_Settlement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 15rpx;
+  width: 100%;
+  margin-left: 10rpx;
+}
+.hmyg_carts .carts .carts_Settlement view {
+  display: flex;
+}
+.hmyg_carts .carts .carts_Settlement view .iconfont.icon-xuanzhong {
+  color: #EA4350;
+}
+.hmyg_carts .carts .carts_Settlement view .iconfont.icon-icon-test1 {
+  height: 36rpx;
+  width: 36rpx;
+  border-radius: 50%;
+  border: 1rpx solid #8A8A8A;
+  color: white;
+}
+.hmyg_carts .carts .carts_Settlement view .Settlement_text {
+  color: #8A8A8A;
+  font-size: 21rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 36rpx ;
+  margin-right: 24rpx ;
+}
+.hmyg_carts .carts .carts_Settlement view .price_total_text {
+  color: #292929;
+  font-size: 26rpx;
+}
+.hmyg_carts .carts .carts_Settlement view .price_total_text .price_total {
+  font-size: 28rpx;
+  color: #EA4350;
+}
+.hmyg_carts .carts .carts_Settlement navigator {
+  width: 150rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  border-radius: 26rpx;
+  margin-right: 50rpx;
+  background-color: var(--themeColor);
+  font-size: 21rpx;
+  color: #fff;
+}
+.hmyg_carts .carts .carts_Settlement navigator view {
+  display: flex;
+  justify-content: center;
+}
+.hmyg_carts .carts .carts_Settlement .carts_disable {
+  width: 150rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  border-radius: 26rpx;
+  margin-right: 50rpx;
+  background-color: gray;
+  font-size: 21rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.hmyg_carts .carts_null .text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #685d60;
+  text-align: center;
+}
+.hmyg_carts .carts_null .info {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10rpx 0;
+  color: #d0ced3;
+  text-align: center;
+}
+.hmyg_carts .carts_null navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hmyg_carts .carts_null navigator view {
+  width: 170rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border: 1rpx solid #d0ced3;
+  color: var(--themeColor);
+  text-align: center;
+}

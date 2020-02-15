@@ -1,2 +1,62 @@
 <!--pages/cart/index.wxml-->
-<text>pages/cart/index.wxml</text>
+<view class="hmyg_carts">
+  <!-- 购物车有内容时开始 -->
+  <view class="carts" wx:if='{{carts.length}}'>
+    <view class="carts_list_item" wx:for='{{carts}}' wx:key='*this'>
+      <!-- 选中图标 -->
+      <view bindtap="handleCheck" data-goods_id='{{item.goods_id}}' class="icon_xuanzhong {{item.checked?'iconfont icon-xuanzhong':'iconfont icon-icon-test1'}}"></view>
+      <!-- 图片 -->
+      <view class="carts_Image">
+        <image src="{{item.goods_small_logo}}"></image>
+      </view>
+      <!-- 文字 -->
+      <view class="carts_text">
+        <!-- 标题 -->
+        <view class="title">{{item.goods_name}}</view>
+        <!-- 价格和数量 -->
+        <view class="carts_toll">
+          <!-- 价格 -->
+          <view class="carts_price">￥{{item.goods_price}}</view>
+          <!-- 数量 -->
+          <view class="carts_number">
+            <!-- 减 -->
+            <view class="iconfont icon-iconset0187" bindtap="handleOperation" data-goods_id='{{item.goods_id}}' data-operation='{{-1}}'></view>
+            <!-- 数量 -->
+            <view class="number_text">{{item.num}}</view>
+            <!-- 加 -->
+            <view class="iconfont icon-54" bindtap="handleOperation" data-goods_id='{{item.goods_id}}' data-operation='{{1}}'></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 购物车结算栏开始 -->
+    <view class="carts_Settlement">
+      <view>
+        <view class="{{allChecked?'iconfont icon-xuanzhong':'iconfont icon-icon-test1'}}" bindtap="handleAllCheck"></view>
+        <view class="Settlement_text">全选</view>
+        <view class="price_total_text">
+          合计：
+          <view class="price_total">￥{{totlaPrice||0}}</view>
+        </view>
+      </view>
+      <navigator url="/pages/pay/index" wx:if='{{!!totalNum}}'>
+        <view>去结算({{totalNum||0}})</view>
+      </navigator>
+      <view class="carts_disable" wx:else>去结算(0)</view>
+    </view>
+    <!-- 购物车结算栏结束 -->
+  </view>
+  <!-- 购物车有内容时结束 -->
+
+  <!-- 当购物车页面没有数据时渲染一个空白页面 -->
+  <!-- 空白页面开始 -->
+  <view class="carts_null" wx:else>
+    <image src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+    <view class="text">购物车居然是空的</view>
+    <view class="info">再忙，也记得买点什么犒赏自己~</view>
+    <navigator url="/pages/category/index" open-type="switchTab">
+      <view>去逛逛</view>
+    </navigator>
+  </view>
+  <!-- 空白页面结束 -->
+</view>
